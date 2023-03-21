@@ -1,0 +1,1442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>appWindow</class>
+ <widget class="QMainWindow" name="appWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>appWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+max-width: 1100px;
+min-width: 1100px;
+
+max-height:900px;
+min-height:900px;
+background-color: rgb(32, 32, 35);
+color: #000000;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="OpenGLWidget" name="field">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>761</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>600</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGraphicsView{
+background-color: rgba(255, 255, 255, 0.05);
+}</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>784</x>
+      <y>12</y>
+      <width>304</width>
+      <height>881</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="divButtons">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 105px;
+min-height: 105px;
+
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+font:bold;
+}</string>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>271</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="gridButton">
+         <property name="labelAlignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="formAlignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="horizontalSpacing">
+          <number>-1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>-1</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="gifBtn">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+max-width: 118px;
+min-width: 118px;
+border:1px solid rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.05);
+max-height: 28px;
+min-height: 28px;
+font:bold;
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Gif</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="screenBtn">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+max-width: 118px;
+min-width: 118px;
+max-height: 28px;
+min-height: 28px;
+border:1px solid rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.05);
+font:bold;
+font-size:16px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Screen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="formLayoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>10</y>
+          <width>271</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="gridBtns">
+         <property name="labelAlignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="formAlignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="horizontalSpacing">
+          <number>-1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>-1</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="reset">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+max-width: 118px;
+min-width: 118px;
+max-height: 28px;
+min-height: 28px;
+border:1px solid rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+}
+
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 0.2);
+font:bold;
+}</string>
+           </property>
+           <property name="text">
+            <string>Reset</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="choose">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+max-width: 118px;
+min-width: 118px;
+max-height: 28px;
+min-height: 28px;
+border:1px solid rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+}
+
+QPushButton:hover{
+background-color: rgba(255, 255, 255, 0.2);
+font:bold;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Open File</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="divProjection">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 65px;
+min-height: 65px;
+
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+font:bold;
+}
+</string>
+       </property>
+       <property name="title">
+        <string>Projection</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>251</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalDiv">
+         <property name="spacing">
+          <number>-1</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="perspective">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+max-width: 120px;
+min-width: 120px;
+
+max-height: 30px;
+min-height: 30px;
+
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Perspective</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="orthographic">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+max-width: 120px;
+min-width: 120px;
+
+max-height: 30px;
+min-height: 30px;
+
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Orthographic</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="divMove">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 122px;
+min-height: 122px;
+
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+font:bold;
+}</string>
+       </property>
+       <property name="title">
+        <string>Move X Y Z</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>230</width>
+          <height>98</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="gridMove">
+         <property name="horizontalSpacing">
+          <number>-1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="input_moveX">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QSlider" name="moveY">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top: 7px;
+max-width: 150px;
+min-width: 150px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="input_moveY">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QSlider" name="moveZ">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top: 7px;
+max-width: 150px;
+min-width: 150px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="input_moveZ">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QSlider" name="moveX">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:7px;
+max-width: 150px;
+min-width: 150px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="divRotate">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 122px;
+min-height: 122px;
+
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+font:bold;
+}</string>
+       </property>
+       <property name="title">
+        <string>Rotate X Y Z</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>230</width>
+          <height>98</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="gridRotate">
+         <property name="horizontalSpacing">
+          <number>-1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="input_rotateX">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QSlider" name="rotateY">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top: 7px;
+max-width: 150px;
+min-width: 150px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="input_rotateY">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QSlider" name="rotateZ">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top: 7px;
+max-width: 150px;
+min-width: 150px;
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="input_rotateZ">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QSlider" name="rotateX">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:7px;
+max-width: 150px;
+min-width: 150px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="divScale">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 65px;
+min-height: 65px;
+
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+font:bold;
+}</string>
+       </property>
+       <property name="title">
+        <string>Scale</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>23</x>
+          <y>30</y>
+          <width>230</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="gridScale">
+         <property name="horizontalSpacing">
+          <number>-1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QSlider" name="scale">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:7px;
+max-width: 150px;
+min-width: 150px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="input_scale">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="divBg">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 65px;
+min-height: 65px;
+
+background-color: rgba(255, 255, 255, 0.05);
+font-size:16px;
+font:bold;
+}
+</string>
+       </property>
+       <property name="title">
+        <string>Background Field</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>19</x>
+          <y>30</y>
+          <width>241</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QSlider" name="background">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:7px;
+max-width: 150px;
+min-width: 150px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="input_bgField">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="divEdges">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 135px;
+min-height: 135px;
+
+background-color: rgba(255, 255, 255, 0.05);
+
+font-size:16px;
+font:bold;
+}</string>
+       </property>
+       <property name="title">
+        <string>Edges</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>251</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontal">
+         <property name="spacing">
+          <number>-1</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="solid">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+max-width: 120px;
+min-width: 120px;
+
+max-height: 30px;
+min-height: 30px;
+
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Solid</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="dashed">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+max-width: 120px;
+min-width: 120px;
+
+max-height: 30px;
+min-height: 30px;
+
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Dashed</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="formLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>250</width>
+          <height>62</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="horizontalSpacing">
+          <number>-1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <item row="1" column="1">
+          <widget class="QSlider" name="edgesSize">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:5px;
+max-width: 125px;
+min-width: 125px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="edgesBg">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:5px;
+max-width: 125px;
+min-width: 125px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="titleBg">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+max-width: 30px;
+min-width: 30px;
+max-height: 25px;
+min-height: 25px;
+font:bold;
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Bg</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="titleSize">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+max-width: 33px;
+min-width: 33px;
+max-height: 18px;
+min-height: 18px;
+font:bold;
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Size</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="input_edgesBg">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="input_edgesSize">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="divVertices">
+       <property name="styleSheet">
+        <string notr="true">QGroupBox{
+max-width: 300px;
+min-width: 300px;
+
+max-height: 135px;
+min-height: 135px;
+
+background-color: rgba(255, 255, 255, 0.05);
+
+font-size:16px;
+font:bold;
+}</string>
+       </property>
+       <property name="title">
+        <string>Vertices</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <widget class="QWidget" name="horizontalLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>246</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalVer">
+         <property name="spacing">
+          <number>-1</number>
+         </property>
+         <item>
+          <widget class="QRadioButton" name="def">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+max-width: 82px;
+min-width: 82px;
+
+max-height: 30px;
+min-height: 30px;
+
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Default</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="cirlce">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+max-width: 70px;
+min-width: 70px;
+
+max-height: 30px;
+min-height: 30px;
+
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Circle</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="square">
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QRadioButton{
+max-width: 70px;
+min-width: 70px;
+
+max-height: 30px;
+min-height: 30px;
+
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Square</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="formLayoutWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>257</width>
+          <height>64</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="horizontalSpacing">
+          <number>-1</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>0</number>
+         </property>
+         <item row="1" column="0">
+          <widget class="QLabel" name="titleSize_2">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+max-width: 33px;
+min-width: 33px;
+max-height: 25px;
+min-height: 25px;
+font:bold;
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Size</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QSlider" name="verticesSize">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:5px;
+max-width: 125px;
+min-width: 125px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="titleBg_2">
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+max-width: 30px;
+min-width: 30px;
+max-height: 25px;
+min-height: 25px;
+font:bold;
+font-size:16px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Bg</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QSlider" name="verticesBg">
+           <property name="cursor">
+            <cursorShape>OpenHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QSlider{
+margin-top:5px;
+max-width: 125px;
+min-width: 125px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLineEdit" name="input_vert_bg">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="input_vert_size">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+max-width:75px;
+min-width: 75px;
+
+max-height: 25px;
+min-height: 25px;
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="pathFile">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>760</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+max-width: 760px;
+min-width: 760px;
+max-height: 19px;
+min-height: 19px;
+font:bold;
+font-size:16px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Path: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="vertexCount">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>250</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+max-width: 250px;
+min-width: 250px;
+max-height: 15px;
+min-height: 15px;
+font:bold;
+font-size:16px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Vertex:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="polygonCount">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>250</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+max-width: 250px;
+min-width: 250px;
+max-height: 19px;
+min-height: 19px;
+font:bold;
+font-size:16px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Polygon:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="recordl">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>40</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+font:bold;
+font-size:16px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settings">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>90</y>
+      <width>27</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+max-width: 25px;
+min-width: 25px;
+max-height: 2p5x;
+min-height: 25px;
+border:1px solid rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.05);
+font:bold;
+font-size:16px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>s</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGLWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>openglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
